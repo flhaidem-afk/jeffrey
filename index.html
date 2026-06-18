@@ -1,4 +1,4 @@
-<!-- index.html -->
+   <!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,8 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>  Jeffrey
+<body>
     <!-- Custom Cursor -->
     <div class="cursor-dot"></div>
     <div class="cursor-ring"></div>
@@ -86,7 +88,7 @@
     <section id="home" class="hero">
         <div class="hero-bg">
             <div class="orb orb-1"></div>
-            <div class="orb orb-2"></div>
+            <div class="orb orb-2"></div>  
             <div class="orb orb-3"></div>
             <div class="grid-overlay"></div>
         </div>
@@ -107,13 +109,13 @@
             </p>
             
             <div class="hero-cta">
-                <a href="#work" class="btn btn-primary" style="right: 70px; position: relative; top: 20px;">
+            <a href="#work" class="btn btn-primary">
                     <span>View Work</span>
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                     </svg> 
                 </a>
-                <a href="#contact" class="btn btn-secondary"style="left: 40px; position: relative; top: 20px;">Contact Me</a>
+              <a href="#contact" class="btn btn-secondary">Contact Me</a>
             </div>
 
 
@@ -190,6 +192,7 @@
             <div class="section-header">
                 <span class="section-label">02 — Skills</span>
                 <h2 class="section-title">Tech stack</h2>
+                <p class="project-desc ">A collection of the technologies and design tools I work with to create performant, accessible,<br> and visually engaging digital experiences.</p>
             </div>
             
             <div class="skills-grid">
@@ -197,11 +200,11 @@
                     <h3 class="skill-cat-title">Frontend</h3>
                     <div class="skill-list">
                         <div class="skill-item" data-level="95">
-                            <span class="skill-name">React / Next.js</span>
+                            <span class="skill-name">HTML</span>
                             <div class="skill-bar"><div class="skill-fill"></div></div>
                         </div>
                         <div class="skill-item" data-level="90">
-                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-name">CSS</span>
                             <div class="skill-bar"><div class="skill-fill"></div></div>
                         </div>
                         <div class="skill-item" data-level="92">
@@ -211,7 +214,14 @@
                         <div class="skill-item" data-level="85">
                             <span class="skill-name">Bootstrap</span>
                             <div class="skill-bar"><div class="skill-fill"></div></div>
+                    
                         </div>
+                        <div class="skill-item" data-level="85">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar"><div class="skill-fill"></div></div> </div>
+                            <div class="skill-item" data-level="75">
+                            <span class="skill-name">Next.js</span>
+                            <div class="skill-bar"><div class="skill-fill"></div></div> </div>
                     </div>
                 </div>
                 
@@ -219,7 +229,7 @@
                     <h3 class="skill-cat-title">Design</h3>
                     <div class="skill-list">
                         <div class="skill-item" data-level="88">
-                            <span class="skill-name">Figma</span>
+                            <span class="skill-name">Animations</span>
                             <div class="skill-bar"><div class="skill-fill"></div></div>
                         </div>
                         <div class="skill-item" data-level="82">
@@ -234,6 +244,11 @@
                             <span class="skill-name">Design Systems</span>
                             <div class="skill-bar"><div class="skill-fill"></div></div>
                         </div>
+
+                              <div class="skill-item" data-level="95">
+                            <span class="skill-name">Responsive Design</span>
+                            <div class="skill-bar"><div class="skill-fill"></div></div>
+                        </div>
                     </div>
                 </div>
                 
@@ -244,16 +259,16 @@
                             <span class="skill-name">Git / GitHub</span>
                             <div class="skill-bar"><div class="skill-fill"></div></div>
                         </div>
-                        <div class="skill-item" data-level="85">
-                            <span class="skill-name">Vite / Webpack</span>
+                        <div class="skill-item" data-level="95">
+                            <span class="skill-name">VS Code</span>
                             <div class="skill-bar"><div class="skill-fill"></div></div>
                         </div>
                         <div class="skill-item" data-level="80">
-                            <span class="skill-name">Testing</span>
+                            <span class="skill-name">GitHub Pages</span>
                             <div class="skill-bar"><div class="skill-fill"></div></div>
                         </div>
                         <div class="skill-item" data-level="75">
-                            <span class="skill-name">CI/CD</span>
+                            <span class="skill-name">Netlify</span>
                             <div class="skill-bar"><div class="skill-fill"></div></div>
                         </div>
                     </div>
@@ -268,125 +283,154 @@
             <div class="section-header">
                 <span class="section-label">03 — Work</span>
                 <h2 class="section-title">Selected projects</h2>
+                 <p class="project-desc ">A selection of projects that highlight my approach to creating
+                 functional, scalable, and visually engaging digital products.
+                 </p>
             </div>
             
             <div class="projects-grid">
                 <article class="project-card">
                     <div class="project-visual" style="background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);">
-                        <div class="project-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
-                                <path d="M3 3h18v18H3zM9 3v18M15 3v18M3 9h18M3 15h18"/>
-                            </svg>
-                        </div>
+           <div class="project-visual">
+
+            <img src="asset/doctor.png" alt="Luxe Market Website">
+
+               <div class="project-icon">
+            <i class="fas fa-stethoscope"></i>
+         </div>
+
+         </div>
                     </div>
                     <div class="project-info">
-                        <span class="project-tag">E-Commerce</span>
-                        <h3 class="project-title">Luxe Market</h3>
-                        <p class="project-desc">Premium shopping platform with real-time inventory and AI-driven recommendations.</p>
+                        <span class="project-tag">Healthcare</span>
+                        <h3 class="project-title">MediCare+</h3>
+                        <p class="project-desc">Clinic appointment booking and patient information portal.</p>
                         <div class="project-tech">
                             <span>Next.js</span>
-                            <span>Stripe</span>
-                            <span>Prisma</span>
+                            <span>Tailwind CS</span>
+                            <span>JavaScript</span>
+                            <span>HTML/CSS</span>
+                         <a href="https://flhaidem-afk.github.io/jeffrey/" class="details-link">Details →</a>
                         </div>
                     </div>
                 </article>
 
                 <article class="project-card">
                     <div class="project-visual" style="background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);">
-                        <div class="project-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
-                                <path d="M18 20V10M12 20V4M6 20v-6"/>
-                            </svg>
-                        </div>
+                       <div class="project-visual">
+
+                <img src="asset/data.png" alt="Gym Website">
+
+              <div class="project-icon">
+        <i class="fas fa-chart-line"></i>
+           </div>
+
+       </div>
                     </div>
                     <div class="project-info">
                         <span class="project-tag">Dashboard</span>
                         <h3 class="project-title">DataPulse</h3>
                         <p class="project-desc">Analytics dashboard with real-time data visualization and custom reporting.</p>
                         <div class="project-tech">
-                            <span>React</span>
-                            <span>D3.js</span>
-                            <span>Node.js</span>
+                            <span>Next.js</span>
+                            <span>JavaScript</span>
+                            <span>Tailwind CSS</span>
+                            <span>Bootstrap</span>
+                            <a href="datapulse/index.html" class="details-link">Details →</a>
                         </div>
                     </div>
                 </article>
 
                 <article class="project-card">
                     <div class="project-visual" style="background: linear-gradient(135deg, #ec4899 0%, #f43f5e 100%);">
-                        <div class="project-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
-                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-tag">Social</span>
-                        <h3 class="project-title">ConnectHub</h3>
-                        <p class="project-desc">Community platform with real-time messaging and collaborative spaces.</p>
-                        <div class="project-tech">
-                            <span>Vue.js</span>
-                            <span>Firebase</span>
-                            <span>WebRTC</span>
-                        </div>
-                    </div>
-                </article>
+                     <img src="asset/car.png" alt="Gym Website">
 
-                <article class="project-card">
-                    <div class="project-visual" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%);">
-                        <div class="project-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
-                                <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                            </svg>
-                        </div>
+    <div class="project-icon">
+      <i class="fas fa-car"></i>
+    
+
+</div>
                     </div>
                     <div class="project-info">
-                        <span class="project-tag">Productivity</span>
-                        <h3 class="project-title">TaskFlow</h3>
-                        <p class="project-desc">Project management tool with kanban boards and team collaboration features.</p>
+                        <span class="project-tag">Car Marketplace</span>
+                        <h3 class="project-title">CarsRepo</h3>
+                        <p class="project-desc">Modern platform for buying and selling used cars online.</p>
                         <div class="project-tech">
-                            <span>Svelte</span>
-                            <span>Supabase</span>
-                            <span>Tailwind</span>
+                            <span>Next.js</span>
+                            <span>JavaScript</span>
+                            <span>Tailwind CSS</span>
+                            <span>HTML/CSS</span>
+                         <a href="carerepo/index.html" class="details-link">Details →</a>
+                        </div>
+                    </div>
+                </article   >
+             <!-- start for my  gym websites                 -->
+
+         <article class="project-card">
+        <div class="project-visual" style="background:        linear-gradient   (135deg, #10b981 0%, #059669 100%);">
+            <img src="asset/restorant.png" alt="Gym Website">
+            <div class="project-icon">
+            <i class="fas fa-utensils"></i>
+        </div>
+            <!-- end for my  gym websites                 -->
+</div>
+                    
+                       <div class="project-info">
+                        <span class="project-tag">Restaurant</span>
+                        <h3 class="project-title">TasteBite</h3>
+                        <p class="project-desc">Restaurant website with menu, reservations, and ordering system.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Bootstrap</span>
+                           <a href="tastebite/index.html" class="details-link">Details →</a>
                         </div>
                     </div>
                 </article>
 
                 <article class="project-card">
                     <div class="project-visual" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);">
-                        <div class="project-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
-                                <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
-                            </svg>
+                        <!-- restorant -->
+                           <img src="asset/babber.png" alt="babber Website">
+                    <div class="project-icon">
+                             <i class="fas fa-scissors"></i>
+                        
                         </div>
                     </div>
+                  
                     <div class="project-info">
-                        <span class="project-tag">AI Tool</span>
-                        <h3 class="project-title">PromptCraft</h3>
-                        <p class="project-desc">AI prompt engineering platform with template library and optimization tools.</p>
+                        <span class="project-tag">Barber Shop Website</span>
+                        <h3 class="project-title">Local Business</h3>
+                        <p class="project-desc">Modern barber salon website with online booking, service listings, and gallery showcase.</p>
                         <div class="project-tech">
                             <span>Next.js</span>
-                            <span>OpenAI</span>
-                            <span>PostgreSQL</span>
+                            <span>Tailwind CSS</span>
+                            <span>JavaScript</span>
+                            <span>HTML/CSS</span>
+                            <a href="localbusiness/index.html" class="details-link">Details →</a>
                         </div>
                     </div>
                 </article>
 
                 <article class="project-card">
                     <div class="project-visual" style="background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);">
+                          <img src="asset/fasion.png" alt="babber Website">
                         <div class="project-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
-                                <path d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/>
-                            </svg>
-                        </div>
+                             <i class="fas fa-bag-shopping"></i>
+                    </div>
                     </div>
                     <div class="project-info">
-                        <span class="project-tag">Design System</span>
-                        <h3 class="project-title">Prism UI</h3>
-                        <p class="project-desc">Accessible component library with theming and dark mode support.</p>
+                        <span class="project-tag">Boutique Fashion Website</span>
+                        <h3 class="project-title">Fashion</h3>
+                        <p class="project-desc">Boutique storefront featuring collections, lookbooks, and online shopping experience.</p>
                         <div class="project-tech">
-                            <span>React</span>
-                            <span>Storybook</span>
-                            <span>CSS Vars</span>
+                            <span>Next.js</span>
+                            <span>Tailwind CSS</span>
+                            <span>JavaScript</span>
+                            <span>Bootstrap</span>
+                            <a href="fashion/index.html" class="details-link">Details →</a>
                         </div>
                     </div>
                 </article>
