@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professional CV</title>
+
+<style>
+    body {
+        margin: 0;
+        background: #0b0f19;
+        font-family: 'Segoe UI', Arial, sans-serif;
+        color: #e5e7eb;
+    }
+
+    .cv-container {
+        max-width: 900px;
+        margin: 40px auto;
+        background: #111827;
+        padding: 50px;
+        border-radius: 16px;
+        box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    }
+
+    /* HEADER */
+    .header {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        border-bottom: 1px solid #1f2937;
+        padding-bottom: 20px;
+        margin-bottom: 25px;
+    }
+
+    .name {
+        font-size: 34px;
+        font-weight: bold;
+        color: #8b5cf6;
+        margin: 0;
+    }
+
+    .role {
+        color: #a78bfa;
+        margin-top: 5px;
+        font-size: 16px;
+    }
+
+    .contact {
+        text-align: right;
+        font-size: 13px;
+        line-height: 1.7;
+        color: #cbd5e1;
+    }
+
+    /* SECTION */
+    .section {
+        margin-top: 25px;
+    }
+
+    .section-title {
+        font-size: 14px;
+        letter-spacing: 2px;
+        color: #8b5cf6;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    p {
+        color: #d1d5db;
+        line-height: 1.7;
+        font-size: 14px;
+    }
+
+    /* SKILLS */
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .skill {
+        background: #1f2937;
+        padding: 8px 12px;
+        border-radius: 6px;
+        font-size: 12px;
+        border: 1px solid #2b3443;
+    }
+
+    /* PROJECTS */
+    .project {
+        margin-bottom: 12px;
+        padding: 10px;
+        background: #0f172a;
+        border-left: 3px solid #8b5cf6;
+        border-radius: 6px;
+    }
+
+    /* BUTTON */
+    .btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 18px;
+        background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(139, 92, 246, 0.3);
+    }
+
+    @media (max-width: 600px) {
+        .header {
+            flex-direction: column;
+            text-align: left;
+        }
+
+        .contact {
+            text-align: left;
+            margin-top: 15px;
+        }
+    }
+</style>
+
+</head>
+
+<body>
+
+<div class="cv-container">
+
+    <!-- HEADER -->
+    <div class="header">
+        <div>
+            <h1 class="name">Jeffrey</h1>
+            <div class="role">Frontend Developer</div>
+        </div>
+
+        <div class="contact">
+            open to work<br>
+            📧 jeffreyjacobb215@gmail.com<br>
+            🔗 https://github.com/flhaidem-afk <br>
+            🌐 https://flhaidem-afk.github.io/jeffrey/
+        </div>
+    </div>
+
+    <!-- BUTTON -->
+    <button class="btn" onclick="window.print()">Download CV (PDF)</button>
+
+    <!-- PROFILE -->
+    <div class="section">
+        <div class="section-title">PROFILE</div>
+        <p>
+            Frontend Developer focused on building clean, responsive, and user-friendly web applications.
+            Passionate about UI design, performance, and modern web technologies.
+        </p>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="section">
+        <div class="section-title">SKILLS</div>
+        <div class="skills">
+            <div class="skill">HTML5</div>
+            <div class="skill">CSS3</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Bootstrap</div>
+            <div class="skill">Tailwind</div>
+            <div class="skill">Git & GitHub</div>
+            <div class="skill">Responsive Design</div>
+        </div>
+    </div>
+
+    <!-- PROJECTS -->
+   <!-- PROJECTS -->
+<div class="section">
+    <div class="section-title">PROJECTS</div>
+
+    <div class="project">
+        🚗 Car Dealership Website — Full-featured platform for buying and selling used cars with responsive UI, filtering system, and modern layout.
+    </div>
+
+    <div class="project">
+        💈 Barber Booking System — Complete appointment booking website with service selection and responsive design.
+    </div>
+
+    <div class="project">
+        🏥 Medical Management Website — Full healthcare platform UI with appointment system and structured pages.
+    </div>
+
+    <div class="project">
+        🛒 E-commerce Website — Complete online store layout with product listing, cart UI, and responsive design.
+    </div>
+
+    <div class="project">
+        🎓 School/Academic Website — Multi-page educational website with course sections and structured navigation.
+    </div>
+
+    <div class="project">
+        📁 Portfolio Website — Personal developer portfolio showcasing projects, skills, and contact information.
+    </div>
+</div>
+
+    <!-- EDUCATION -->
+    <div class="section">
+        <div class="section-title">EDUCATION</div>
+        <p>Self-taught / Bootcamp / School Certificate</p>
+    </div>
+
+</div>
+
+</body>
+</html>

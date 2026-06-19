@@ -264,13 +264,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Parallax effect for orbs
-    window.addEventListener('scroll', () => {
-        const scrolled = window.pageYOffset;
-        const orbs = document.querySelectorAll('.orb');
-        
-        orbs.forEach((orb, index) => {
-            const speed = 0.5 + (index * 0.2);
-            orb.style.transform = `translateY(${scrolled * speed}px)`;
-        });
-    });
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimeout);
+
+    resizeTimeout = setTimeout(() => {
+        if (this.charts.revenue) {
+            this.initRevenueChart();
+        }
+
+        if (this.charts.traffic) {
+            this.initTrafficChart();
+        }
+    }, 300);
+});
 });
