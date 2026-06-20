@@ -1,5 +1,11 @@
 /* styles.css */
 
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 /* CSS Variables */
 :root {
     --primary: #6366f1;
@@ -383,15 +389,15 @@ body {
     font-size: clamp(1.5rem, 4vw, 2.5rem);
     color: var(--text-secondary);
     font-weight: 600;
-}
+};
 
 .typewriter {
-    color: var(--primary);  project
+    color: var(--primary);  
 }
 
 .cursor-blink {
     color: var(--primary);
-    animation: blink 1s step-end infinite;
+    animation: blink, 1s step-end infinite;
 }
 
 .hero-desc {
